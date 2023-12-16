@@ -1,0 +1,44 @@
+.button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.welcome-slider {
+  margin: 1px auto;
+}
+
+.slick-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Sol ok pozisyonu */
+.slick-prev {
+  z-index: 1;
+  left: 50px; /* Slayderın sol kenarından 10px içeri */
+  position:absolute; /* Mutlak pozisyonlama */
+  top: 50%; /* Slayderın yüksekliğinin ortasına */
+  transform: translateY(-50%); /* Y ekseninde yarı yarıya çevirir */
+}
+
+/* Sağ ok pozisyonu */
+.slick-next {
+  z-index: 1;
+  right: 50px; /* Slayderın sağ kenarından 10px içeri */
+  position: absolute; /* Mutlak pozisyonlama */
+  top: 50%; /* Slayderın yüksekliğinin ortasına */
+  transform: translateY(-50%); /* Y ekseninde yarı yarıya çevirir */
+}
+
+
+.slick-prev:before, .slick-next:before {
+  font-size: 60px;
+  color: black;
+}

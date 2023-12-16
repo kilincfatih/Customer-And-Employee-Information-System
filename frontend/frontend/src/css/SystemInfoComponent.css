@@ -1,0 +1,38 @@
+.system-info-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .title {
+    text-align: center;
+    color: #007bff;
+  }
+  
+  .intro, .section-content {
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  
+  .section-title {
+    margin-top: 30px;
+    color: #333;
+  }
+  
+  .info-button {
+    display: block;
+    width: max-content;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .info-button:hover {
+    background-color: #0056b3;
+  }
