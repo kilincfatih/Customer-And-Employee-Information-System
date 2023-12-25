@@ -7,6 +7,8 @@ import image1 from '../img/image1.jpg';
 import image2 from '../img/image2.jpg';
 import image3 from '../img/image3.jpg';
 import image4 from '../img/image4.jpg';
+import UserCommentsComponent from '../components/UserCommentsComponent';
+import SSSComponent from '../components/SSSComponent';
 
 const PrevArrow = (props) => {
   const { className, style, onClick } = props;
@@ -49,6 +51,7 @@ const WelcomeScreenComponent = () => {
   };
 
   return (
+    <>
     <div className='welcome-slider'>
       <Slider {...settings}>
         <div>
@@ -65,6 +68,14 @@ const WelcomeScreenComponent = () => {
         </div>
       </Slider>
     </div>
+    <div className='userCommentsComponent-section'>
+      <h2 className='userCommentsComponent-title'>Kullanıcı Yorumları</h2>
+      <UserCommentsComponent/>
+    </div>
+    <div className='sss-section'>
+      <SSSComponent/>
+    </div>
+   </>
   );
 };
 

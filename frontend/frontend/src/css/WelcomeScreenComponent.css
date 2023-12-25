@@ -9,6 +9,13 @@
   transition: background-color 0.3s ease;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f1f1f1 0%, #000000 100%);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 .welcome-slider {
   margin: 1px auto;
 }
@@ -19,26 +26,34 @@
   height: auto;
 }
 
-/* Sol ok pozisyonu */
 .slick-prev {
   z-index: 1;
-  left: 50px; /* Slayderın sol kenarından 10px içeri */
-  position:absolute; /* Mutlak pozisyonlama */
-  top: 50%; /* Slayderın yüksekliğinin ortasına */
-  transform: translateY(-50%); /* Y ekseninde yarı yarıya çevirir */
+  left: 100px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-/* Sağ ok pozisyonu */
 .slick-next {
   z-index: 1;
-  right: 50px; /* Slayderın sağ kenarından 10px içeri */
-  position: absolute; /* Mutlak pozisyonlama */
-  top: 50%; /* Slayderın yüksekliğinin ortasına */
-  transform: translateY(-50%); /* Y ekseninde yarı yarıya çevirir */
+  right: 100px;
+  position:absolute;
+  top: 50%;
 }
 
 
 .slick-prev:before, .slick-next:before {
   font-size: 60px;
   color: black;
+}
+
+.userCommentsComponent-section{
+  margin-top: 50px;
+}
+
+.userCommentsComponent-title{
+  text-align: center; 
+  font-size: 24px; 
+  color: #333;
+  margin-bottom: 20px;
 }
